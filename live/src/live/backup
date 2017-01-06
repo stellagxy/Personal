@@ -1,0 +1,34 @@
+ HashMap<String, Integer> zhanqiLive = new HashMap<>();
+        
+        zhanqiLive.put("http://www.zhanqi.tv/conan", -1);
+        zhanqiLive.put("http://www.zhanqi.tv/xiye", -1);
+        zhanqiLive.put("http://www.zhanqi.tv/mystic", -1);
+        zhanqiLive.put("http://www.zhanqi.tv/zzr", -1);
+        zhanqiLive.put("http://www.zhanqi.tv/flandre", -1);
+        zhanqiLive.put("http://www.zhanqi.tv/krystal", -1);
+        zhanqiLive.put("http://www.zhanqi.tv/tank", -1);
+        zhanqiLive.put("http://www.zhanqi.tv/u", -1);
+        zhanqiLive.put("http://www.zhanqi.tv/ella", -1);
+        
+        HashMap<String, Integer> douyuLive = new HashMap<>();
+        douyuLive.put("http://www.douyu.com/pyl", -1);
+        douyuLive.put("http://www.douyu.com/We1less", -1);
+        douyuLive.put("http://www.douyu.com/599358", -1);//san
+        douyuLive.put("http://www.douyu.com/522387", -1);//imp
+        douyuLive.put("http://www.douyu.com/547739", -1);//easyhoon
+        douyuLive.put("http://www.douyu.com/641986", -1);
+        
+        HashMap<String, Integer> quanminLive = new HashMap<>();
+        quanminLive.put("http://www.quanmin.tv/star/15", -1);//uzi
+        quanminLive.put("http://www.quanmin.tv/star/2355433", -1);//smlz
+        
+
+        HashMap<String, Integer> pandaLive = new HashMap<>();
+        pandaLive.put("http://www.panda.tv/10083", -1);//957
+        pandaLive.put("http://www.panda.tv/393164", -1);//zero
+        pandaLive.put("http://www.panda.tv/10087", -1);//condi
+        pandaLive.put("http://www.panda.tv/257245", -1);//zzitai
+        pandaLive.put("http://www.panda.tv/69696", -1);//wushuang
+        pandaLive.put("http://www.panda.tv/257243", -1);//rookie
+        pandaLive.put("http://www.panda.tv/257237", -1);//kitties
+        pandaLive.put("http://www.panda.tv/10085", -1);//pentaQ
