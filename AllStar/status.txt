@@ -1,0 +1,3054 @@
+<?xml version="1.0" encoding="GBK"?>
+<html>
+  <head>
+    <meta charset="gbk"/>
+    <meta name="robots" content="all"/>
+    <meta name="Copyright" content="TENCNET"/>
+    <meta name="author" content="Tencent-TGideas"/>
+    <meta name="Description" content="英雄联盟官方网站，海量风格各异的英雄，丰富、便捷的物品合成系统，游戏内置的匹配、排行和竞技系统，独创的“召唤师”系统及技能、符文、天赋等系统组合，必将带你进入一个崭新而又丰富多彩的游戏世界。"/>
+    <meta name="Keywords" content="英雄联盟,英雄联盟官方下载,lol下载,lol攻略,lol视频,lol视频攻略,英雄资料,lol封号,小仓解说视频"/>
+    <title>
+      allstar投票-英雄联盟官方网站-腾讯游戏
+    </title>
+    <!-- 设计:cp | 重构:cp | 创建时间:2016-10-21 | 团队博客：http://tgideas.qq.com -->    <link href="css/common.css" rel="stylesheet" type="text/css"/>
+    <script src="http://pingjs.qq.com/ping_tcss_ied.js">
+    </script>
+    <style type="text/css">
+      .tg-sns{ height=24px; overflow:hidden; *zoom:1;}.tg-sns-link{ float:left; width:24px; height:24px; margin-right: 5px; text-indent:-9999em; overflow:hidden; background-image:url(http://ossweb-img.qq.com/images/icon/share/icon-sns-24.png); background-position:-9999em -9999em; background-repeat:no-repeat;}.tg-sns-link:hover{opacity: 0.7;filter: alpha(opacity=70);}.tg-sns-wechat{ background-position: 0 0}.tg-sns-qq{ background-position: -30px 0}.tg-sns-qzone{ background-position: -60px 0}.tg-sns-weibo{ background-position: -90px 0}.tg-sns-pengyou{ background-position: -120px 0}.tg-sns-sina{ background-position: -150px 0}.tg-sns-douban{ background-position: -180px 0}.tg-sns-kaixin{ background-position: -210px 0}.tg-sns-renren{ background-position: -240px 0}
+    </style>
+    <link href="http://ossweb-img.qq.com/images/lol/title/lol.css?v=46" rel="stylesheet" type="text/css"/>
+    <script src="http://ossweb-img.qq.com/images/lol/title/gg.js?v=46" type="text/javascript" charset="gb2312">
+    </script>
+    <script type="text/javascript" src="http://login.game.qq.com/comm-cgi-bin/login/LoginReturnInfo.cgi?callback=jsonp79&amp;game=lol">
+    </script>
+  </head>
+  <body style="padding-top: 42px;">
+    <div class="container">
+      <a href="http://lol.qq.com/" target="_blank" class="logo">
+        <img src="http://ossweb-img.qq.com/images/lol/web201310/public/logo.png" width="203" height="106" alt="LOGO"/>
+      </a>
+      <div class="header">
+        <div class="main center">
+          <h1>
+            2016全明星赛投票
+          </h1>
+          <h2>
+            来自全球的职业选手们将会齐聚西班牙巴塞罗那，参加2016全明星赛。到底哪一位职业选手有资格摘得“全明星”这一头衔，一切全部取决于您。在11月1日14：00到11月8日14：00间，英雄联盟游戏内等级达到20级的玩家，可以投出属于您的一票，做好准备：大战即将来临。
+          </h2>
+          <a href="javascript:void(0);" title="立即投票" class="btn-vote center disb" onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.vote'})">
+            <strong class="disb">
+              立即投票
+            </strong>
+            <span class="disb">
+              Pick your allstars
+            </span>
+          </a>
+          <p class="p-btn-box center main-vote">
+            <a href="javascript:TGDialogS('tc7');;" title="全球票数排行榜" class=" fl" onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.qqph'})">
+              全球票数排行榜
+            </a>
+            <a href="javascript:void(0);" title="我的选择" class=" fr" onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.wdxz'})">
+              我的选择
+            </a>
+          </p>
+          <div class="loginbar main-vote">
+            <!--登录前状态 Start-->            <p id="unlogin" style="display: block;">
+              亲爱的用户，请 
+              <a href="javascript:;" id="dologin">
+                【登录】
+              </a>
+            </p>
+            <!--登录前状态 End-->            <!--登录后状态 Start-->            <p id="logined" style="display: none;">
+              欢迎您，
+              <span id="login_qq_span">
+              </span>
+              ，
+              <a href="javascript:;" id="dologout">
+                【注销】
+              </a>
+              <a href="javascript:AllStarVote.BindArea();" title="绑定大区" id="noBind">
+                [绑定大区]
+              </a>
+              <span id="area_info" style="display:none">
+              </span>
+              <a href="javascript:AllStarVote.BindArea();" title="更改绑定" style="display:none" id="isBind">
+                [更改绑定]
+              </a>
+            </p>
+            <!--登录后状态 End-->          </div>
+        </div>
+      </div>
+      <div class="avatar" id="avatar">
+        <div class="main center main-vote">
+          <p class="p-avatar pa spr">
+          </p>
+          <strong class="p-strong">
+            *该图标非最终效果
+          </strong>
+          <h3>
+            获取
+            <strong>
+              2016全明星赛图标
+            </strong>
+          </h3>
+          <h4>
+            成功参与投票的玩家，需在11月1日-11月15日之间选择一个发放大区，我们会在12月8日之前将
+            <br/>
+            2016全明星赛图标发放到玩家选择的大区中。
+            <span class="sam-wz-tx">
+              （*重要：请参与玩家务必选择发放大区，否则图标将无法到账）
+            </span>
+          </h4>
+          <a href="javascript:AllStarVote.CheckRecive();" title="选择发放大区" class="btn-receive pa" onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.ljlq'})">
+            选择发放大区
+          </a>
+        </div>
+        <div class="main center main-choose">
+          <p>
+            <a href="javascript:pgvSendClick({hottag:'act.a20161018allstar.btn.tpsy'});" title="投票首页">
+              投票首页
+            </a>
+              &gt;  我的选择
+          </p>
+          <h3>
+            <strong id="G_GameName"/>
+            <span id="G_Area">
+            </span>
+          </h3>
+          <h4>
+            2016全明星赛票选情况如下：
+          </h4>
+        </div>
+      </div>
+      <div class="section" id="section">
+        <div class="main main-vote lol-bule" id="lol-main">
+          <div class="section-top">
+            <div class="section-top-nav section-top-bule fl">
+              <i class="i-zd spr">
+              </i>
+              <ul id="lol-bule">
+                <li class="active" onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.nav_lpl'})" data-lolnav="0">
+                  <span>
+                    LPL
+                  </span>
+                  <i class="li-i">
+                  </i>
+                </li>
+                <li onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.nav_eulcs'})" data-lolnav="1">
+                  <span>
+                    欧洲 LCS
+                  </span>
+                  <i class="li-i">
+                  </i>
+                </li>
+                <li onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.nav_lms'})" data-lolnav="2">
+                  <span>
+                    LMS
+                  </span>
+                  <i class="li-i">
+                  </i>
+                </li>
+              </ul>
+            </div>
+            <div class="section-top-nav section-top-orange fl">
+              <i class="i-zd spr">
+              </i>
+              <ul id="lol-orange">
+                <li onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.nav_lck'})" data-lolnav="3">
+                  <span>
+                    LCK
+                  </span>
+                  <i class="li-i">
+                  </i>
+                </li>
+                <li onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.nav_iwci'})" data-lolnav="4">
+                  <span>
+                    IWC
+                  </span>
+                </li>
+                <li onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.nav_nalcs'})" data-lolnav="5">
+                  <span>
+                    北美 LCS
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <a href="javascript:pgvSendClick({hottag:'act.a20161018allstar.btn.select'});" title="我的选择" class="btn-select pa spr">
+              我的选择
+            </a>
+          </div>
+          <div class="section-main">
+            <i class="section-main-i">
+            </i>
+            <em class="ul-tip spr" id="ul-tip" style="left: 0px;"/>
+            <ul class="clearfix" id="chooseList">
+              <li onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.sd'})" class="active">
+                <p>
+                  上单
+                </p>
+                <h5>
+                  正在选择
+                </h5>
+                <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt="" style="display: none;"/>
+              </li>
+              <li onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.dy'})">
+                <p>
+                  打野
+                </p>
+                <h5>
+                  待选择
+                </h5>
+                <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt="" style="display: none;"/>
+              </li>
+              <li onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.zd'})">
+                <p>
+                  中单
+                </p>
+                <h5>
+                  待选择
+                </h5>
+                <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt="" style="display: none;"/>
+              </li>
+              <li onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.adc'})">
+                <p>
+                  ADC
+                </p>
+                <h5>
+                  待选择
+                </h5>
+                <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt="" style="display: none;"/>
+              </li>
+              <li onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.fz'})">
+                <p>
+                  辅助
+                </p>
+                <h5>
+                  待选择
+                </h5>
+                <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt="" style="display: none;"/>
+              </li>
+            </ul>
+            <a href="javascript:TGDialogS('tc9');" id="confirm" class="pa" title="确认投票" onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.qrtp'})">
+              确认投票
+            </a>
+          </div>
+          <div class="section-bottom">
+            <div class="section-bottom-tip">
+              抱歉，同一个赛区上您最多可以选择两位来自同一战队的队员。
+            </div>
+            <div class="section-bottom-main" id="PositionList">
+              <ul class="clearfix active" id="Position_1">
+                <li id="ProdList_1207" team="19" position="1">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/amazingj.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        IM
+                      </h3>
+                      <p>
+                        amazingJ
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      209473
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1193" team="8" position="1">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/koro1.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        EDG
+                      </h3>
+                      <p>
+                        Koro1
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      1129795
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1195" team="15" position="1">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/gimgoon.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        GT
+                      </h3>
+                      <p>
+                        GimGoon
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      79877
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1222" team="29" position="1">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/v.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        NB
+                      </h3>
+                      <p>
+                        V
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      48640
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1201" team="18" position="1">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/zz1tai.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        iG
+                      </h3>
+                      <p>
+                        Zz1tai
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      131546
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1246" team="47" position="1">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/flandre.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        SS
+                      </h3>
+                      <p>
+                        Flandre
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      348607
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1257" team="55" position="1">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/957.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        WE
+                      </h3>
+                      <p>
+                        957
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      251734
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1234" team="1" position="1">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/acorn.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        SAT
+                      </h3>
+                      <p>
+                        acorn
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      57874
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1214" team="24" position="1">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/marin.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        LGD
+                      </h3>
+                      <p>
+                        MaRin
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      731596
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1232" team="41" position="1">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/looper.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        RNG
+                      </h3>
+                      <p>
+                        Looper
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      445593
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1190" team="8" position="1">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/mouse.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        EDG
+                      </h3>
+                      <p>
+                        mouse
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      1630507
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1250" team="53" position="1">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/loong.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        VG
+                      </h3>
+                      <p>
+                        Loong
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      55733
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1227" team="33" position="1">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/xiyang.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        OMG
+                      </h3>
+                      <p>
+                        xiyang
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      225392
+                    </span>
+                  </h4>
+                </li>
+              </ul>
+              <ul class="clearfix" id="Position_2">
+                <li id="ProdList_1221" team="29" position="2">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/swift.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        NB
+                      </h3>
+                      <p>
+                        Swift
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      76050
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1197" team="15" position="2">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/wushuang.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        GT
+                      </h3>
+                      <p>
+                        wushuang
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      212045
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1240" team="1" position="2">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/chimin.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        SAT
+                      </h3>
+                      <p>
+                        chimin
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      49199
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1216" team="24" position="2">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/eimy.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        LGD
+                      </h3>
+                      <p>
+                        Eimy
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      61551
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1208" team="19" position="2">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/avoidless.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        IM
+                      </h3>
+                      <p>
+                        Avoidless
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      78445
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1226" team="33" position="2">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/juejue.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        OMG
+                      </h3>
+                      <p>
+                        juejue
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      73658
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1200" team="18" position="2">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/kid.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        iG
+                      </h3>
+                      <p>
+                        Kid
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      131954
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1189" team="8" position="2">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/clearlove.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        EDG
+                      </h3>
+                      <p>
+                        Clearlove
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      2858368
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1245" team="47" position="2">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/sofm.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        SS
+                      </h3>
+                      <p>
+                        SofM
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      292622
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1231" team="41" position="2">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/mlxg.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        RNG
+                      </h3>
+                      <p>
+                        Mlxg
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      956891
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1237" team="1" position="2">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/march.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        SAT
+                      </h3>
+                      <p>
+                        March
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      50787
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1217" team="24" position="2">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/1ntruder.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        LGD
+                      </h3>
+                      <p>
+                        1ntruder
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      61059
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1249" team="53" position="2">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/dandy.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        VG
+                      </h3>
+                      <p>
+                        DanDy
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      125551
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1256" team="55" position="2">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/condi.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        WE
+                      </h3>
+                      <p>
+                        Condi
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      248907
+                    </span>
+                  </h4>
+                </li>
+              </ul>
+              <ul class="clearfix" id="Position_3">
+                <li id="ProdList_1210" team="19" position="3">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/baeme.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        IM
+                      </h3>
+                      <p>
+                        baeme
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      76402
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1209" team="19" position="3">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/athena.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        IM
+                      </h3>
+                      <p>
+                        athena
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      81850
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1225" team="33" position="3">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/icon.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        OMG
+                      </h3>
+                      <p>
+                        icon
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      99125
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1244" team="47" position="3">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/tank.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        SS
+                      </h3>
+                      <p>
+                        TANK
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      54618
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1235" team="1" position="3">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/otto.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        SAT
+                      </h3>
+                      <p>
+                        otto
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      45501
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1194" team="15" position="3">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/republic.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        GT
+                      </h3>
+                      <p>
+                        republiC
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      471545
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1215" team="24" position="3">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/we1less.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        LGD
+                      </h3>
+                      <p>
+                        We1less
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      1765872
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1219" team="29" position="3">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/dade.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        NB
+                      </h3>
+                      <p>
+                        Dade
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      105285
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1239" team="1" position="3">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/snoopy.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        SAT
+                      </h3>
+                      <p>
+                        snoopy
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      55223
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1213" team="24" position="3">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/punished.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        LGD
+                      </h3>
+                      <p>
+                        punished
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      63009
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1188" team="8" position="3">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/scout.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        EDG
+                      </h3>
+                      <p>
+                        scout
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      170802
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1199" team="18" position="3">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/rook1e.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        iG
+                      </h3>
+                      <p>
+                        RoOk1E
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      378117
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1255" team="55" position="3">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/xiye.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        WE
+                      </h3>
+                      <p>
+                        xiye
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      276794
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1230" team="41" position="3">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/xiaohu.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        RNG
+                      </h3>
+                      <p>
+                        xiaohu
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      810283
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1248" team="53" position="3">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/easyhoon.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        VG
+                      </h3>
+                      <p>
+                        Easyhoon
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      220635
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1192" team="8" position="3">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/pawn.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        EDG
+                      </h3>
+                      <p>
+                        PawN
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      506574
+                    </span>
+                  </h4>
+                </li>
+              </ul>
+              <ul class="clearfix" id="Position_4">
+                <li id="ProdList_1224" team="33" position="4">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/s1mlz.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        OMG
+                      </h3>
+                      <p>
+                        S1mlz
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      358397
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1238" team="1" position="4">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/styz.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        SAT
+                      </h3>
+                      <p>
+                        styz
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      50668
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1252" team="53" position="4">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/endless.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        VG
+                      </h3>
+                      <p>
+                        Endless
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      50594
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1206" team="19" position="4">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/jinjiao.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        IM
+                      </h3>
+                      <p>
+                        jinjiao
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      85545
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1212" team="24" position="4">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/imp.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        LGD
+                      </h3>
+                      <p>
+                        imp
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      357400
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1254" team="55" position="4">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/mystic.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        WE
+                      </h3>
+                      <p>
+                        Mystic
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      113967
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1187" team="8" position="4">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/deft.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        EDG
+                      </h3>
+                      <p>
+                        Deft
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      572678
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1196" team="15" position="4">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/pentaq.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        GT
+                      </h3>
+                      <p>
+                        PentaQ
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      221599
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1220" team="29" position="4">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/happyy.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        NB
+                      </h3>
+                      <p>
+                        HappyY
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      51096
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1202" team="18" position="4">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/marge.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        iG
+                      </h3>
+                      <p>
+                        Marge
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      118905
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1229" team="41" position="4">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/uzi.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        RNG
+                      </h3>
+                      <p>
+                        Uzi
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      2913254
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1251" team="53" position="4">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/xuanxuanpi.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        VG
+                      </h3>
+                      <p>
+                        XuanXuanPi
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      55293
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1236" team="1" position="4">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/xq.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        SAT
+                      </h3>
+                      <p>
+                        xQ
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      45418
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1243" team="47" position="4">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/martin.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        SS
+                      </h3>
+                      <p>
+                        Martin
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      50458
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1203" team="18" position="4">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/Rain.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        iG
+                      </h3>
+                      <p>
+                        Rain
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      153008
+                    </span>
+                  </h4>
+                </li>
+              </ul>
+              <ul class="clearfix" id="Position_5">
+                <li id="ProdList_1247" team="47" position="5">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/jiezou.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        SS
+                      </h3>
+                      <p>
+                        Jiezou
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      95539
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1211" team="19" position="5">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/road.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        IM
+                      </h3>
+                      <p>
+                        road
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      139878
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1204" team="18" position="5">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/tabe.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        iG
+                      </h3>
+                      <p>
+                        Tabe
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      396522
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1241" team="1" position="5">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/x1u.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        SAT
+                      </h3>
+                      <p>
+                        x1u
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      63755
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1228" team="33" position="5">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/five.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        OMG
+                      </h3>
+                      <p>
+                        five
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      146669
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1218" team="24" position="5">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/pyl.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        LGD
+                      </h3>
+                      <p>
+                        pyl
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      768262
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1223" team="29" position="5">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/morzb.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        NB
+                      </h3>
+                      <p>
+                        MorZB
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      72461
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1253" team="53" position="5">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/caveman.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        VG
+                      </h3>
+                      <p>
+                        caveMan
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      65709
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1242" team="1" position="5">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/maidong.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        SAT
+                      </h3>
+                      <p>
+                        Maidong
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      63494
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1198" team="15" position="5">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/savoki.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        GT
+                      </h3>
+                      <p>
+                        Savoki
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      206921
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1233" team="41" position="5">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/mata.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        RNG
+                      </h3>
+                      <p>
+                        Mata
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      1478187
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1205" team="18" position="5">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/baolan.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        iG
+                      </h3>
+                      <p>
+                        Baolan
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      132634
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1191" team="8" position="5">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/meiko.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        EDG
+                      </h3>
+                      <p>
+                        Meiko
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      1056279
+                    </span>
+                  </h4>
+                </li>
+                <li id="ProdList_1258" team="55" position="5">
+                  <div class="li-top">
+                    <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/zero.png" alt=""/>
+                    <i class="bg-hd">
+                    </i>
+                    <b/>
+                    <div class="txt-box">
+                      <h3>
+                        WE
+                      </h3>
+                      <p>
+                        Zero
+                      </p>
+                    </div>
+                  </div>
+                  <h4>
+                    中国区票数：
+                    <span>
+                      409325
+                    </span>
+                  </h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="notice">
+            <h3>
+              活动
+              <strong>
+                须知
+              </strong>
+            </h3>
+            <p>
+              <span>
+                1
+              </span>
+              每个QQ帐号下英雄联盟
+              <strong>
+                游戏等级达到20级
+              </strong>
+              的玩家，可以在每个赛区的每个位置选择一位选手进行投票；
+            </p>
+            <p>
+              <span>
+                2
+              </span>
+              每个玩家最多
+              <strong>
+                可同时选择2名
+              </strong>
+              来自同一战队的成员；
+            </p>
+            <p>
+              <span>
+                3
+              </span>
+              玩家确认
+              <strong>
+                提交后不可更改投票结果
+              </strong>
+              ；
+            </p>
+            <p>
+              <span>
+                4
+              </span>
+              在活动期间成功参与投票的玩家，需在11月1日-11月15日之间选择一个发放大区，我们会在12月8日之前将2016全明星赛图标发放到玩家选择的大区中。（*重要：请参与玩家务必选择发放大区，否则图标将无法到账）
+            </p>
+            <p>
+              <span>
+                5
+              </span>
+              全球票数排行榜在周一至周五期间每天更新一次；
+            </p>
+            <p>
+              <span>
+                6
+              </span>
+              最终投票结果以全球票数为准，全球票数计算方法为：每个地区明星队投票中该地区投票权重占全球票数的80%，海外地区玩家投票的权重占20%；
+            </p>
+            <p>
+              <span>
+                7
+              </span>
+              请确保参与投票活动的QQ账户下有英雄联盟游戏角色且等级达到20级；
+            </p>
+            <p>
+              <span>
+                8
+              </span>
+              投票通道开启时长共计7*24小时。
+            </p>
+            <h4>
+              FAQ
+            </h4>
+            <ul>
+              <li>
+                <h5>
+                  <i>
+                    Q：
+                  </i>
+                  我可以为谁投票？
+                </h5>
+                <p>
+                  <i>
+                    A：
+                  </i>
+                  您可以在五大赛区中，分别为每个赛区的每个位置投票选出一名选手。
+                </p>
+              </li>
+              <li>
+                <h5>
+                  <i>
+                    Q：
+                  </i>
+                  跨赛区投票是否会有权重？
+                </h5>
+                <p>
+                  <i>
+                    A：
+                  </i>
+                  没错！职业选手所在赛区以外的投票不得占据总票数的20%以上。
+                </p>
+              </li>
+              <li>
+                <h5>
+                  <i>
+                    Q：
+                  </i>
+                  那些职业选手有资格参选？
+                </h5>
+                <p>
+                  <i>
+                    A：
+                  </i>
+                  有资格参选的职业选手必须满足以下两个条件的其中之一：曾经在该选手赛区的夏季赛中参加过的比赛比例达到20%，或是在2016全球总决赛中参加过的比赛比例达到20%。同一支队伍不得超过两名参赛选手。如果同一支队伍有超过两名选手被悬赏，那么只有经过权重后得票总数最高的两名选手才会获得邀请。
+                </p>
+              </li>
+              <li>
+                <h5>
+                  <i>
+                    Q：
+                  </i>
+                  那么国际外卡赛区的职业选手呢？
+                </h5>
+                <p>
+                  <i>
+                    A：
+                  </i>
+                  国际外卡赛区会通过12月1日到12月4日的国际外卡赛区全明星赛来决出他们的职业选手。
+                </p>
+              </li>
+              <li>
+                <h5>
+                  <i>
+                    Q：
+                  </i>
+                  我有什么免费的礼物可以拿吗？
+                </h5>
+                <p>
+                  <i>
+                    A：
+                  </i>
+                  有的！投票后，您可以获得一枚召唤师图标！
+                </p>
+              </li>
+              <li>
+                <h5>
+                  <i>
+                    Q：
+                  </i>
+                  参与投票之后，我可以将2016全明星赛 图标领取到哪个大区中呢？
+                </h5>
+                <p>
+                  <i>
+                    A：
+                  </i>
+                  您可以将图标领取到参与活动QQ号的一个英雄联盟游戏大区内。每个QQ只能领取一个图标。
+                </p>
+              </li>
+              <li>
+                <h5>
+                  <i>
+                    Q：
+                  </i>
+                  每个地区的全明星选手是怎样被选出的？
+                </h5>
+                <p>
+                  <i>
+                    A：
+                  </i>
+                  1、每个地区每个位置获得最高百分比的选手将被选入该地区的全明星队。
+                    2、如果一个的最高百分比选手被选出，所有这个位置的其他选手将被“淘汰”。
+                    3、如果全明星队伍中，某支战队已经有两名选手进入全明星队，那这支队伍的其他成员将没有资格进入全明星队伍。
+                    重复以上三条直到选出一个地区的全明星队伍。
+                    
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main main-choose">
+          <div class="section-main-choose clearfix">
+            <div class="section-choose section-choose-bule fl">
+              <h4 class="spr h4-tit1">
+                LPL
+              </h4>
+              <div class="page-section-select">
+                <ul style="display:none">
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        上单
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        打野
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        中单
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        ADC
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        辅助
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                </ul>
+                <div class="unselected" style="display:none">
+                  <a href="javascript:GotoChoose(0);" title="现在去做出选择">
+                    现在去做出选择&gt;&gt;
+                  </a>
+                </div>
+              </div>
+              <h4 class="spr h4-tit2">
+                欧洲 LCS
+              </h4>
+              <div class="page-section-select">
+                <ul style="display:none">
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        上单
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        打野
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        中单
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        ADC
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        辅助
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                </ul>
+                <div class="unselected" style="display:none">
+                  <a href="javascript:GotoChoose(1);" title="现在去做出选择">
+                    现在去做出选择&gt;&gt;
+                  </a>
+                </div>
+              </div>
+              <h4 class="spr h4-tit3">
+                LMS
+              </h4>
+              <div class="page-section-select">
+                <ul style="display:none">
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        上单
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        打野
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        中单
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        ADC
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        辅助
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                </ul>
+                <div class="unselected" style="display:none">
+                  <a href="javascript:GotoChoose(2);" title="现在去做出选择">
+                    现在去做出选择&gt;&gt;
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="section-choose section-choose-orange fl">
+              <h4 class="spr h4-tit4">
+                LCK
+              </h4>
+              <div class="page-section-select">
+                <ul style="display:none">
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        上单
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        打野
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        中单
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        ADC
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        辅助
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                </ul>
+                <div class="unselected" style="display:none">
+                  <a href="javascript:GotoChoose(3);" title="现在去做出选择">
+                    现在去做出选择&gt;&gt;
+                  </a>
+                </div>
+              </div>
+              <h4 class="spr h4-tit5">
+                IWC
+              </h4>
+              <div class="page-section-select">
+                <h5>
+                  来自巴西,独联体,日本,北拉美, 南拉美, 大洋洲, 东南亚和土耳其赛区的国际外卡赛区队伍会通过12月1日到12月4日在西班牙巴塞罗纳的举行国际外卡赛区全明星赛来决出代表外卡赛区参加2016全明星赛的职业选手。
+                </h5>
+              </div>
+              <h4 class="spr h4-tit6">
+                北美 LCS
+              </h4>
+              <div class="page-section-select">
+                <ul style="display:none">
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        上单
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        打野
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        中单
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        ADC
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                  <li>
+                    <div class="img-result-box">
+                      <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+                      <span>
+                        辅助
+                      </span>
+                    </div>
+                    <h6>
+                      未选择
+                    </h6>
+                  </li>
+                </ul>
+                <div class="unselected" style="display:none">
+                  <a href="javascript:GotoChoose(5);" title="现在去做出选择">
+                    现在去做出选择&gt;&gt;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="share-box">
+            <div class="share">
+              <p>
+                将我的选择分享到：
+              </p>
+              <div id="tg-sns" class="tg-sns">
+                <a class="tg-sns-link tg-sns-wechat" onclick="pgvSendClick({hottag:'sns.buttons.wechat'})" href="http://game.qq.com/share/weixin.htm?url=http%3A%2F%2Flol.qq.com%2Fact%2Fa20161018allstar%2Findex.htm%3FADTAG%3Dlol.landing%26atm_cl%3Dad%26atm_pos%3D6408%26e_code%3D277218&amp;title=allstar%E6%8A%95%E7%A5%A8-%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F%E5%AE%98%E6%96%B9%E7%BD%91%E7%AB%99-%E8%85%BE%E8%AE%AF%E6%B8%B8%E6%88%8F&amp;pic=http://game.gtimg.cn/images/lol/act/a20161018allstar/share.png" title="分享到微信" target="_blank">
+                  wechat
+                </a>
+                <a class="tg-sns-link tg-sns-qq" onclick="pgvSendClick({hottag:'sns.buttons.qq'});window.open('http://connect.qq.com/widget/shareqq/index.html?url=http%3A%2F%2Flol.qq.com%2Fact%2Fa20161018allstar%2Findex.htm%3FADTAG%3Dlol.landing%26atm_cl%3Dad%26atm_pos%3D6408%26e_code%3D277218&amp;title=allstar%E6%8A%95%E7%A5%A8-%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F%E5%AE%98%E6%96%B9%E7%BD%91%E7%AB%99-%E8%85%BE%E8%AE%AF%E6%B8%B8%E6%88%8F&amp;pics=http://game.gtimg.cn/images/lol/act/a20161018allstar/share.png','','width=840, height=540')" href="javascript:void(0)" title="分享到QQ好友">
+                  qq
+                </a>
+                <a class="tg-sns-link tg-sns-qzone" onclick="pgvSendClick({hottag:'sns.buttons.qzone'});window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http%3A%2F%2Flol.qq.com%2Fact%2Fa20161018allstar%2Findex.htm%3FADTAG%3Dlol.landing%26atm_cl%3Dad%26atm_pos%3D6408%26e_code%3D277218&amp;title=allstar%E6%8A%95%E7%A5%A8-%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F%E5%AE%98%E6%96%B9%E7%BD%91%E7%AB%99-%E8%85%BE%E8%AE%AF%E6%B8%B8%E6%88%8F&amp;pics=http://game.gtimg.cn/images/lol/act/a20161018allstar/share.png','','width=840, height=540')" href="javascript:void(0)" title="分享到QQ空间">
+                  qzone
+                </a>
+                <a class="tg-sns-link tg-sns-sina" onclick="pgvSendClick({hottag:'sns.buttons.sina'});window.open('http://v.t.sina.com.cn/share/share.php?url=http%3A%2F%2Flol.qq.com%2Fact%2Fa20161018allstar%2Findex.htm%3FADTAG%3Dlol.landing%26atm_cl%3Dad%26atm_pos%3D6408%26e_code%3D277218&amp;title=allstar%E6%8A%95%E7%A5%A8-%E8%8B%B1%E9%9B%84%E8%81%94%E7%9B%9F%E5%AE%98%E6%96%B9%E7%BD%91%E7%AB%99-%E8%85%BE%E8%AE%AF%E6%B8%B8%E6%88%8F&amp;pic=http://game.gtimg.cn/images/lol/act/a20161018allstar/share.png','','width=840, height=540')" href="javascript:void(0)" title="分享到新浪微博">
+                  sina
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lol_nav main-vote">
+      <a href="javascript:void(0);" title="参与2016全明星赛票选赢头像" class="nav-btn1 spr" onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.nav_btn1'})">
+        <span class="disb">
+          参与2016全明星赛票选
+        </span>
+        <strong class="disb">
+          赢头像
+        </strong>
+      </a>
+      <a href="javascript:TGDialogS('tc7');" title="查看全球票数排行" class="nav-btn2 spr" onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.nav_btn2'})">
+        查看全球票数排行
+      </a>
+      <a href="javascript:;" title="查看与分享我的选择" class="nav-btn3 spr" onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.nav_btn3'})">
+        查看与分享我的选择
+      </a>
+      <a href="javascript:alert('敬请期待！');" title="前往全明星赛事" class="nav-btn4 spr" onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.nav_btn4'})">
+        前往全明星赛事
+      </a>
+      <p class="nav-p spr">
+        下载掌上英雄联盟
+      </p>
+      <a href="javascript:void(0);" title="返回顶部" class="nav-btn5 spr" onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.nav_btn5'})">
+        返回顶部
+      </a>
+    </div>
+    <a href="javascript:void(0);" title="返回" class="main-choose vote-back-btn" onclick="pgvSendClick({hottag:'act.a20161018allstar.btn.nav_back'})">
+      返回
+      <br/>
+      首页
+    </a>
+    <div class="dialog" id="tc1">
+      <div class="dia-con">
+        <p>
+          抱歉，该账户下游戏等级未达到20级，不能参与本次投票，请返回选择游戏等级20级以上的大区或帐号。
+        </p>
+        <a href="javascript:showDialog.hide()" class="tc_btn" title="确定">
+          确定
+        </a>
+      </div>
+      <a class="dia-close" href="javascript:showDialog.hide()" title="关闭">
+        ×
+      </a>
+    </div>
+    <div class="dialog" id="tc2">
+      <div class="dia-con">
+        <p>
+          抱歉！请先从下方选择一名选手再进行投票
+        </p>
+        <a href="javascript:showDialog.hide()" class="tc_btn" title="确定">
+          确定
+        </a>
+        <a class="dia-close" href="javascript:showDialog.hide()" title="关闭">
+          ×
+        </a>
+      </div>
+    </div>
+    <div class="dialog" id="tc3">
+      <div class="dia-con">
+        <p>
+          抱歉，同一个赛区您最多可以选择两位来自同一战队的队员。
+        </p>
+        <a href="javascript:showDialog.hide()" class="tc_btn" title="确定">
+          确定
+        </a>
+        <a class="dia-close" href="javascript:showDialog.hide()" title="关闭">
+          ×
+        </a>
+      </div>
+    </div>
+    <div class="dialog" id="tc4">
+      <div class="dia-con">
+        <p>
+          恭喜您！投票成功
+        </p>
+        <a href="javascript:showDialog.hide()" class="tc_btn" title="确定">
+          确定
+        </a>
+        <a class="dia-close" href="javascript:LOL_AllStar.SuccessVote()" title="关闭">
+          ×
+        </a>
+      </div>
+    </div>
+    <div class="dialog" id="tc5">
+      <div class="dia-con">
+        <p>
+          抱歉！您已经投过该赛区的票了
+        </p>
+        <a href="javascript:showDialog.hide()" class="tc_btn" title="确定">
+          确定
+        </a>
+        <a class="dia-close" href="javascript:showDialog.hide()" title="关闭">
+          ×
+        </a>
+      </div>
+    </div>
+    <div class="dialog" id="tc6">
+      <div class="dia-con">
+        <p>
+          您确定要选择”
+          <span class="sam-txt-tx">
+            XXXXX
+          </span>
+          “作为2016全明星赛 图标的发放大区吗，确认后不可修改，我们
+          <span class="sam-txt-tx">
+            将在12月8日之前将图标发送到您的账户中
+          </span>
+          。
+        </p>
+        <div class="pop-ups-vote-btn">
+          <a href="javascript:AllStarVote.ChangeRecive();" onclick="pgvSendClick({hottag:'act.a20161018allstar.btn_lq.xgdq'})" title="修改大区">
+            修改大区
+          </a>
+          <a href="javascript:showDialog.hide()" title="确定" onclick="pgvSendClick({hottag:'act.a20161018allstar.btn_lq.qd'})" class="btn-determine">
+            确定
+          </a>
+        </div>
+        <a class="dia-close" href="javascript:showDialog.hide()" title="关闭">
+          ×
+        </a>
+      </div>
+    </div>
+    <div class="dialog" id="tc10">
+      <div class="dia-con">
+        <p>
+          来自巴西,独联体,日本,北拉美, 南拉美, 大洋洲, 东南亚和土耳其赛区的国际外卡赛区队伍会通过12月1日到12月4日在西班牙巴塞罗纳的举行国际外卡赛区全明星赛来决出代表外卡赛区参加2016全明星赛的职业选手。 
+        </p>
+        <a href="javascript:showDialog.hide()" class="tc_btn" title="确定">
+          确定
+        </a>
+        <a class="dia-close" href="javascript:showDialog.hide()" title="关闭">
+          ×
+        </a>
+      </div>
+    </div>
+    <div class="dialog" id="tc7">
+      <div class="dia-con">
+        <h2>
+          全球票数排行
+        </h2>
+        <p class="tc_tip">
+          全球票数占比从11月2日起每个工作日11:00更新一次
+        </p>
+        <ul class="tc_listbox clearfix" id="RankMatchArea">
+          <li class="on_blue on" id="WLPL">
+            LPL
+          </li>
+          <li class="on_blue" id="WEU">
+            欧洲 LCS
+          </li>
+          <li class="on_blue" id="WLMS">
+            LMS
+          </li>
+          <li id="WLCK" class="">
+            LCK
+          </li>
+          <li class="WLMS" id="WIWC">
+            IWC
+          </li>
+          <li class="end last" id="WNA">
+            北美 LCS
+          </li>
+        </ul>
+        <!--这里加上lol-orange下面字体变黄，去掉字体变蓝-->        <div class="c_listbox" id="cc_listbox">
+          <div class="c_list">
+            <ul class="fc_list clearfix" id="RankPosition">
+              <li class="on" id="WTop">
+                上单
+              </li>
+              <li id="WJungler">
+                打野
+              </li>
+              <li id="WMid">
+                中单
+              </li>
+              <li id="WAD">
+                ADC
+              </li>
+              <li id="WSupport" class="last">
+                辅助
+              </li>
+            </ul>
+            <div class="fc_bigbox2">
+              <span class="fc_bigbox2-tip">
+                来自巴西,独联体,日本,北拉美, 南拉美, 大洋洲, 东南亚和土耳其赛区的国际外卡赛区队伍会通过12月1日到12月4日在西班牙巴塞罗纳的举行国际外卡赛区全明星赛来决出代表外卡赛区参加2016全明星赛的职业选手。
+              </span>
+              <div class="fc_box2">
+                <ul class="fc_list2 clearfix" id="Rank">
+                  <li>
+                    <div class="ranking-canvas">
+                      <canvas data-ring="28" class="process" width="128px" height="128px" style="transform: rotate(39.6deg);"/>
+                    </div>
+                    <div class="b_img">
+                      <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/mouse.png" alt=""/>
+                      <span>
+                        28%
+                      </span>
+                    </div>
+                    <h4>
+                      <strong>
+                        EDG
+                      </strong>
+                      mouse
+                    </h4>
+                    <em>
+                      1
+                    </em>
+                    <i>
+                      我的选择
+                    </i>
+                  </li>
+                  <li>
+                    <div class="ranking-canvas">
+                      <canvas data-ring="20" class="process" width="128px" height="128px" style="transform: rotate(54deg);"/>
+                    </div>
+                    <div class="b_img">
+                      <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/marin.png" alt=""/>
+                      <span>
+                        20%
+                      </span>
+                    </div>
+                    <h4>
+                      <strong>
+                        LGD
+                      </strong>
+                      MaRin
+                    </h4>
+                    <em>
+                      2
+                    </em>
+                    <i>
+                      我的选择
+                    </i>
+                  </li>
+                  <li>
+                    <div class="ranking-canvas">
+                      <canvas data-ring="18" class="process" width="128px" height="128px" style="transform: rotate(57.6deg);"/>
+                    </div>
+                    <div class="b_img">
+                      <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/koro1.png" alt=""/>
+                      <span>
+                        18%
+                      </span>
+                    </div>
+                    <h4>
+                      <strong>
+                        EDG
+                      </strong>
+                      Koro1
+                    </h4>
+                    <em>
+                      3
+                    </em>
+                    <i>
+                      我的选择
+                    </i>
+                  </li>
+                  <li>
+                    <div class="ranking-canvas">
+                      <canvas data-ring="10" class="process" width="128px" height="128px" style="transform: rotate(72deg);"/>
+                    </div>
+                    <div class="b_img">
+                      <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/looper.png" alt=""/>
+                      <span>
+                        10%
+                      </span>
+                    </div>
+                    <h4>
+                      <strong>
+                        RNG
+                      </strong>
+                      Looper
+                    </h4>
+                    <em>
+                      4
+                    </em>
+                    <i>
+                      我的选择
+                    </i>
+                  </li>
+                  <li>
+                    <div class="ranking-canvas">
+                      <canvas data-ring="5" class="process" width="128px" height="128px" style="transform: rotate(81deg);"/>
+                    </div>
+                    <div class="b_img">
+                      <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/flandre.png" alt=""/>
+                      <span>
+                        5%
+                      </span>
+                    </div>
+                    <h4>
+                      <strong>
+                        SS
+                      </strong>
+                      Flandre
+                    </h4>
+                    <em>
+                      5
+                    </em>
+                    <i>
+                      我的选择
+                    </i>
+                  </li>
+                  <li>
+                    <div class="ranking-canvas">
+                      <canvas data-ring="5" class="process" width="128px" height="128px" style="transform: rotate(81deg);"/>
+                    </div>
+                    <div class="b_img">
+                      <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/amazingj.png" alt=""/>
+                      <span>
+                        5%
+                      </span>
+                    </div>
+                    <h4>
+                      <strong>
+                        IM
+                      </strong>
+                      amazingJ
+                    </h4>
+                    <em>
+                      6
+                    </em>
+                    <i>
+                      我的选择
+                    </i>
+                  </li>
+                  <li>
+                    <div class="ranking-canvas">
+                      <canvas data-ring="4" class="process" width="128px" height="128px" style="transform: rotate(82.8deg);"/>
+                    </div>
+                    <div class="b_img">
+                      <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/957.png" alt=""/>
+                      <span>
+                        4%
+                      </span>
+                    </div>
+                    <h4>
+                      <strong>
+                        WE
+                      </strong>
+                      957
+                    </h4>
+                    <em>
+                      7
+                    </em>
+                    <i>
+                      我的选择
+                    </i>
+                  </li>
+                  <li>
+                    <div class="ranking-canvas">
+                      <canvas data-ring="3" class="process" width="128px" height="128px" style="transform: rotate(84.6deg);"/>
+                    </div>
+                    <div class="b_img">
+                      <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/xiyang.png" alt=""/>
+                      <span>
+                        3%
+                      </span>
+                    </div>
+                    <h4>
+                      <strong>
+                        OMG
+                      </strong>
+                      xiyang
+                    </h4>
+                    <em>
+                      8
+                    </em>
+                    <i>
+                      我的选择
+                    </i>
+                  </li>
+                  <li>
+                    <div class="ranking-canvas">
+                      <canvas data-ring="2" class="process" width="128px" height="128px" style="transform: rotate(86.4deg);"/>
+                    </div>
+                    <div class="b_img">
+                      <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/zz1tai.png" alt=""/>
+                      <span>
+                        2%
+                      </span>
+                    </div>
+                    <h4>
+                      <strong>
+                        iG
+                      </strong>
+                      Zz1tai
+                    </h4>
+                    <em>
+                      9
+                    </em>
+                    <i>
+                      我的选择
+                    </i>
+                  </li>
+                  <li>
+                    <div class="ranking-canvas">
+                      <canvas data-ring="1" class="process" width="128px" height="128px" style="transform: rotate(88.2deg);"/>
+                    </div>
+                    <div class="b_img">
+                      <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/v.png" alt=""/>
+                      <span>
+                        1%
+                      </span>
+                    </div>
+                    <h4>
+                      <strong>
+                        NB
+                      </strong>
+                      V
+                    </h4>
+                    <em>
+                      10
+                    </em>
+                    <i>
+                      我的选择
+                    </i>
+                  </li>
+                  <li>
+                    <div class="ranking-canvas">
+                      <canvas data-ring="1" class="process" width="128px" height="128px" style="transform: rotate(88.2deg);"/>
+                    </div>
+                    <div class="b_img">
+                      <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/gimgoon.png" alt=""/>
+                      <span>
+                        1%
+                      </span>
+                    </div>
+                    <h4>
+                      <strong>
+                        GT
+                      </strong>
+                      GimGoon
+                    </h4>
+                    <em>
+                      11
+                    </em>
+                    <i>
+                      我的选择
+                    </i>
+                  </li>
+                  <li>
+                    <div class="ranking-canvas">
+                      <canvas data-ring="1" class="process" width="128px" height="128px" style="transform: rotate(88.2deg);"/>
+                    </div>
+                    <div class="b_img">
+                      <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/acorn.png" alt=""/>
+                      <span>
+                        1%
+                      </span>
+                    </div>
+                    <h4>
+                      <strong>
+                        SAT
+                      </strong>
+                      acorn
+                    </h4>
+                    <em>
+                      12
+                    </em>
+                    <i>
+                      我的选择
+                    </i>
+                  </li>
+                  <li>
+                    <div class="ranking-canvas">
+                      <canvas data-ring="1" class="process" width="128px" height="128px" style="transform: rotate(88.2deg);"/>
+                    </div>
+                    <div class="b_img">
+                      <img src="http://ossweb-img.qq.com/images/lol/act/a20161018allstar/player/loong.png" alt=""/>
+                      <span>
+                        1%
+                      </span>
+                    </div>
+                    <h4>
+                      <strong>
+                        VG
+                      </strong>
+                      Loong
+                    </h4>
+                    <em>
+                      13
+                    </em>
+                    <i>
+                      我的选择
+                    </i>
+                  </li>
+                </ul>
+                <!-- <div class="pages_box" id="jPager"><a href="javascript:;" class="pageprenone previouspageone" title="当前已经是第一页">上一页</a><a href="javascript:;" class="pagenextnone" title=" 当前已经是最后一页">下一页</a></div> -->              </div>
+            </div>
+          </div>
+        </div>
+        <a class="dia-close" href="javascript:showDialog.hide()" title="关闭">
+          ×
+        </a>
+      </div>
+    </div>
+    <div class="dialog" id="tc8">
+      <div class="dia-con">
+        <ul class="dia-con-ul">
+          <li>
+            <span>
+              请选择大区：
+            </span>
+            <select class="login-input" id="areaContentId">
+              <option value="" selected="selected">
+                选择大区
+              </option>
+            </select>
+          </li>
+          <li>
+            <span>
+              请选择角色：
+            </span>
+            <select class="login-input" id="roleContentId">
+              <option value="" selected="selected">
+                选择角色
+              </option>
+            </select>
+          </li>
+        </ul>
+        <a href="javascript:showDialog.hide()" class="tc_btn" title="确定" id="confirmButtonId">
+          确定
+        </a>
+        <a class="dia-close" href="javascript:showDialog.hide()" title="关闭">
+          ×
+        </a>
+      </div>
+    </div>
+    <div class="dialog" id="tc9">
+      <a class="dia-close" href="javascript:showDialog.hide()" title="关闭">
+        ×
+      </a>
+      <div class="pop-ups-main">
+        <h3>
+          您已做完
+          <span>
+            LPL
+          </span>
+          赛区的全明星选择
+        </h3>
+        <ul>
+          <li>
+            <div class="img-result-box">
+              <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+              <span>
+                上单
+              </span>
+            </div>
+            <h6>
+              未选择
+            </h6>
+          </li>
+          <li>
+            <div class="img-result-box">
+              <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+              <span>
+                打野
+              </span>
+            </div>
+            <h6>
+              未选择
+            </h6>
+          </li>
+          <li>
+            <div class="img-result-box">
+              <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+              <span>
+                中单
+              </span>
+            </div>
+            <h6>
+              未选择
+            </h6>
+          </li>
+          <li>
+            <div class="img-result-box">
+              <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+              <span>
+                ADC
+              </span>
+            </div>
+            <h6>
+              未选择
+            </h6>
+          </li>
+          <li>
+            <div class="img-result-box">
+              <img src="http://game.gtimg.cn/images/lol/act/a20161018allstar/tx.jpg" alt=""/>
+              <span>
+                辅助
+              </span>
+            </div>
+            <h6>
+              未选择
+            </h6>
+          </li>
+        </ul>
+        <div class="pop-ups-vote-btn">
+          <a href="javascript:closeDialog();" title="返回修改" onclick="pgvSendClick({hottag:'act.a20161018allstar.btn_toupiao.fhxg'})" class="btn-modify">
+            返回修改
+          </a>
+          <a href="javascript:AllStarVote.DoVote();" title="确定" onclick="pgvSendClick({hottag:'act.a20161018allstar.btn_toupiao.qd'})" class="btn-determine">
+            确定
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="http://ossweb-img.qq.com/images/lol/title/lol.js">
+    </script>
+    <script src="http://ossweb-img.qq.com/images/js/ArtTemplate.js">
+    </script>
+    <script src="http://ossweb-img.qq.com/images/js/milo/milo-min.js">
+    </script>
+    <script src="http://ossweb-img.qq.com/images/js/foot.js">
+    </script>
+    <div id="footer_ied">
+      <div class="wrap_ied">
+        <p>
+          <a href="http://ieg.tencent.com" target="_blank">
+            腾讯互动娱乐
+          </a>
+           | 
+          <a href="http://game.qq.com/contract.shtml" target="_blank">
+            服务条款
+          </a>
+           | 
+          <a href="http://adver.qq.com/" target="_blank">
+            广告服务
+          </a>
+           | 
+          <a href="http://game.qq.com/hr/" target="_blank">
+            腾讯游戏招聘
+          </a>
+           | 
+          <a href="http://service.qq.com/" target="_blank">
+            腾讯游戏客服
+          </a>
+           | 
+          <a href="http://game.qq.com/gnav" target="_blank">
+            游戏地图
+          </a>
+           | 
+          <a href="http://tgact.qq.com/" target="_blank">
+            游戏活动
+          </a>
+           | 
+          <a href="http://game.qq.com/brand/business.htm" target="_blank">
+            商务合作
+          </a>
+           | 
+          <a href="http://www.qq.com/map/" target="_blank">
+            网站导航
+          </a>
+        </p>
+        <p class="e">
+          COPYRIGHT © 1998 – 2016 TENCENT. ALL RIGHTS RESERVED.
+        </p>
+        <p>
+          <a href="http://www.tencent.com/law/mo_law.shtml?/law/copyright.htm" target="_blank">
+            腾讯公司 版权所有
+          </a>
+        </p>
+      </div>
+    </div>
+    <script src="http://ossweb-img.qq.com/images/js/dr/dr.js" type="text/javascript">
+    </script>
+    <script src="http://ossweb-img.qq.com/images/js/eas/eas.js" type="text/javascript">
+    </script>
+    <script src="http://dr.game.qq.com/dr
